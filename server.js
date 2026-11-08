@@ -14,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 // 中间件配置
 app.use(cors());                    // 解决跨域
